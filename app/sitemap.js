@@ -1,0 +1,1 @@
+export default function sitemap(){const base="https://olbareun-jeongri.vercel.app";return [{url:base,lastModified:new Date(),changeFrequency:"weekly",priority:1}]}
