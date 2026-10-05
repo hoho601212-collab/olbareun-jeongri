@@ -1,1 +1,1 @@
-export default function sitemap(){const base="https://olbareun-jeongri.vercel.app";return [{url:base,lastModified:new Date(),changeFrequency:"weekly",priority:1}]}
+import {areas} from "../lib/areas";export default function sitemap(){const base="https://olbareun-jeongri.vercel.app";const now=new Date();return [{url:base,lastModified:now,changeFrequency:"weekly",priority:1},{url:base+"/busan",lastModified:now,changeFrequency:"weekly",priority:.9},...areas.map(a=>({url:base+"/busan/"+a.slug,lastModified:now,changeFrequency:"monthly",priority:.8}))]}
