@@ -1,0 +1,3 @@
+import Link from "next/link";import {areas} from "../../lib/areas";
+export const metadata={title:"부산 유품정리 지역안내",description:"올바른정리 부산 지역 안내. 부산 16개 구·군의 유품정리, 빈집정리, 폐기물 처리와 필요한 부분 철거 상담 정보를 지역별로 확인하세요."};
+export default function Busan(){return <main><section className="subHero"><p>BUSAN SERVICE AREA</p><h1>부산 유품정리<br/>지역별 안내</h1><span>지역 이름만 바꾼 안내가 아니라, 현장 환경과 정리 조건을 고려한 정보를 제공합니다.</span></section><section className="section"><div className="crumb"><Link href="/">홈</Link> › 부산 지역별</div><h2>부산 16개 구·군</h2><p className="lead">정리가 필요한 지역을 선택해 작업 범위와 지역별 확인사항을 살펴보세요.</p><div className="regionCards">{areas.map(a=><Link href={"/busan/"+a.slug} key={a.slug}><small>{a.focus}</small><h3>{a.name} 유품정리</h3><p>{a.angle}</p><b>지역 안내 보기 →</b></Link>)}</div></section></main>}
