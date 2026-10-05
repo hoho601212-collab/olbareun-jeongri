@@ -16,3 +16,10 @@ npm run build
 ```
 
 현재 전화번호, 온라인 상담 링크, 사업자 정보, 실제 작업 이미지는 임시값이며 실제 정보 확인 후 교체합니다.
+
+
+## 부산 지역 이미지 업로드 규칙
+- 폴더: `public/images/areas/`
+- 형식: WebP 권장, 3:2 비율
+- 파일명: 지역 slug와 동일
+- 목록: `jung.webp`, `seo.webp`, `dong.webp`, `yeongdo.webp`, `busanjin.webp`, `dongnae.webp`, `nam.webp`, `buk.webp`, `haeundae.webp`, `saha.webp`, `geumjeong.webp`, `gangseo.webp`, `yeonje.webp`, `suyeong.webp`, `sasang.webp`, `gijang.webp`
