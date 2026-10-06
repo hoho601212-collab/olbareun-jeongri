@@ -12,7 +12,7 @@ export default function Home(){return <><main><section className="hero"><div cla
 {[
  ["유품정리","estate-cleanup","고인의 물품을 신중하게 분류하고 공간을 정리한 현장",["흑백 빈방과 올바른정리 워터마크.png","흑백으로 담은 어수선한 방.png","정리 중인 흑백 거실 풍경.png"]],
  ["빈집정리","vacant-home","장기간 비어 있던 공간의 생활물품과 가재도구를 정리한 현장",["vacant-home-before-after-bw.webp","vacant-home-before-after-02-bw.webp","vacant-home-before-after-03-bw.webp"]],
- ["폐기물처리","waste","집정리 과정에서 발생한 물품을 분류하고 반출한 현장",null]
+ ["폐기물처리","waste","집정리 과정에서 발생한 물품을 분류하고 반출한 현장",["waste-before-after-01-bw.webp","waste-before-after-02-bw.webp","waste-before-after-03-bw.webp"]]
 ].map(([title,folder,desc,photos])=><div className="caseGroup" key={folder}>
  <div className="caseGroupHead"><div><span>WORK CASE</span><h3>{title}</h3><p>{desc}</p></div><Link href="/cases">전체 사례 보기 →</Link></div>
  <div className="casePhotoGrid">{[1,2,3].map(n=><figure key={n} className="casePhotoSlot">
