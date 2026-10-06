@@ -145,3 +145,8 @@
 .siteTop>.mobileNav.isOpen{transform:translateX(0)}
 .siteTop>.mobileNav>a{white-space:normal;font-size:17px;font-weight:800;color:#102d43;padding:16px 4px;border-bottom:1px solid #e7ecef}
 }
+
+/* Estate cleanup service hero image */
+.serviceHero.estateCleanupHero{background-image:linear-gradient(90deg,rgba(9,30,46,.94) 0%,rgba(9,30,46,.78) 38%,rgba(9,30,46,.30) 68%,rgba(9,30,46,.18) 100%),url("/images/services/estate-cleanup/estate-cleanup-hero.webp");background-size:cover;background-position:center center;background-repeat:no-repeat}
+.serviceHero.estateCleanupHero>div{position:relative;z-index:1}
+@media(max-width:800px){.serviceHero.estateCleanupHero{background-image:linear-gradient(90deg,rgba(9,30,46,.94),rgba(9,30,46,.62)),url("/images/services/estate-cleanup/estate-cleanup-hero.webp");background-position:34% center;background-size:auto 100%;min-height:430px;display:flex;align-items:center}}
