@@ -40,3 +40,40 @@
   .steps article .processIcon{width:62px;height:62px}
   .steps article .processIcon img{width:58px;height:58px}
 }
+
+/* Categorized work-case gallery */
+.caseGallery{padding-top:72px;padding-bottom:78px}
+.caseGroup{margin-top:42px}
+.caseGroup+.caseGroup{padding-top:42px;border-top:1px solid #dce5ec}
+.caseGroupHead{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:18px}
+.caseGroupHead span{display:block;font-size:10px;letter-spacing:.16em;font-weight:800;color:#7990a4;margin-bottom:5px}
+.caseGroupHead h3{font-size:25px;margin:0 0 6px;color:#082b4b}
+.caseGroupHead p{margin:0;color:#6d8194;font-size:14px}
+.caseGroupHead>a{font-size:13px;font-weight:800;color:#285c82;white-space:nowrap}
+.casePhotoGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.casePhotoSlot{margin:0;aspect-ratio:3/2;overflow:hidden;border-radius:16px;background:#e9eff3}
+.caseUploadPlaceholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:linear-gradient(135deg,#334f63,#aebbc4);color:#fff;padding:18px}
+.caseGroup:nth-of-type(3) .caseUploadPlaceholder{background:linear-gradient(135deg,#54514e,#bbb6b0)}
+.caseGroup:nth-of-type(4) .caseUploadPlaceholder{background:linear-gradient(135deg,#405d68,#bac5c8)}
+.caseUploadPlaceholder small{font-size:9px;letter-spacing:.15em;opacity:.72}
+.caseUploadPlaceholder strong{font-size:19px;margin:7px 0}
+.caseUploadPlaceholder code{font-size:10px;max-width:100%;overflow-wrap:anywhere;background:rgba(0,0,0,.15);padding:5px 8px;border-radius:5px;color:#eef4f7}
+@media(max-width:800px){
+ .caseGallery{padding-top:50px;padding-bottom:55px}
+ .caseGroup{margin-top:32px}
+ .caseGroup+.caseGroup{padding-top:32px}
+ .caseGroupHead{align-items:flex-start}
+ .caseGroupHead h3{font-size:22px}
+ .casePhotoGrid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+ .casePhotoSlot{border-radius:10px}
+ .caseUploadPlaceholder{padding:8px}
+ .caseUploadPlaceholder strong{font-size:13px}
+ .caseUploadPlaceholder code{display:none}
+}
+@media(max-width:480px){
+ .caseGroupHead{display:block}
+ .caseGroupHead>a{display:inline-block;margin-top:10px}
+ .casePhotoGrid{gap:6px}
+ .caseUploadPlaceholder small{font-size:8px}
+ .caseUploadPlaceholder strong{font-size:11px}
+}
