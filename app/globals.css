@@ -79,3 +79,10 @@
 }
 
 .casePhoto{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+
+/* Brand logo */
+.globalBrandImage{display:flex;align-items:center;min-width:180px}
+.globalBrandImage img{display:block;width:auto;height:48px;max-width:230px;object-fit:contain}
+.footerLogo{display:inline-flex;align-items:center;margin-bottom:12px}
+.footerLogo img{display:block;width:auto;height:58px;max-width:260px;object-fit:contain}
+@media(max-width:800px){.globalBrandImage{min-width:0}.globalBrandImage img{height:38px;max-width:165px}.footerLogo img{height:48px;max-width:210px}}
