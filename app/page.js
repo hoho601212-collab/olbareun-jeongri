@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {areas as areaLinks} from "../lib/areas";
 const services=[["01.png","유품정리","고인의 물품을 신중하게 분류하고 정리합니다.","/service/estate-cleanup"],["02.png","폐기물처리","집정리 과정에서 발생하는 물품의 반출 범위를 확인합니다.","/service/waste"],["03.png","부분 철거","정리 후 필요한 시설물 철거 범위를 확인합니다.","/service/partial-demolition"],["04.png","빈집정리","장기간 비어 있거나 매각 전인 공간을 목적에 맞게 정리합니다.","/service/vacant-home"]];
 const steps=[["01","상담 및 문의","전화 또는 온라인 상담"],["02","현장 확인","작업 범위 및 견적 안내"],["03","작업 계획","정리 범위 협의"],["04","유품정리 및 폐기물처리","전문 인력 작업 진행"],["05","마무리 확인","최종 정리 및 점검 완료"]];
