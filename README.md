@@ -23,3 +23,9 @@ npm run build
 - 형식: WebP 권장, 3:2 비율
 - 파일명: 지역 slug와 동일
 - 목록: `jung.webp`, `seo.webp`, `dong.webp`, `yeongdo.webp`, `busanjin.webp`, `dongnae.webp`, `nam.webp`, `buk.webp`, `haeundae.webp`, `saha.webp`, `geumjeong.webp`, `gangseo.webp`, `yeonje.webp`, `suyeong.webp`, `sasang.webp`, `gijang.webp`
+
+
+## Brand logo upload
+- Upload folder: `public/images/brand/`
+- Recommended filename: `olbareun-jeongri-logo.png`
+- Transparent PNG recommended for the header logo.
