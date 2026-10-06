@@ -6,6 +6,18 @@ export default function Home(){return <><main><section className="hero"><div cla
 <section id="areas" className="split section"><div><p className="kicker">BUSAN SERVICE AREA</p><h2>우리 동네 유품정리<br/>지금 바로 확인하세요</h2><p className="lead">부산 전 지역, 가까운 곳에서 신속하게 방문합니다. 지역별 현장 특성에 맞춰 상담합니다.</p><a className="outline" href="#areaList">지역별 상세보기 →</a></div><div className="areaPanel"><div className="mapImageWrap"><img src="/images/maps/부산지도.png" alt="부산 16개 구·군 유품정리 서비스 지역 지도" className="busanMapImage" width="900" height="900" loading="lazy"/></div><div id="areaList" className="areaList">{areaLinks.map(a=><a key={a.slug} href={"/busan/"+a.slug}>{a.name}<b>›</b></a>)}</div></div></section>
 <section id="about" className="section pale"><h2>올바른정리가<br/>선택받는 이유</h2><p className="lead">단순한 정리가 아닌, 공간과 마음을 존중하는 정리를 약속합니다.</p><div className="reasons">{[["부산 전 지역","신속한 현장 방문"],["전문 인력","체계적인 작업 진행"],["합리적인 비용","작업 범위 사전 안내"],["정식 폐기물 처리","안전하고 올바른 처리"],["철거·원상복구까지","한 번에 해결"]].map((x,i)=><div key={i}><i className="reasonFlower"><img src="/images/trust/chrysanthemum.png" alt="" width="72" height="72"/></i><strong>{x[0]}</strong><small>{x[1]}</small></div>)}</div></section>
 <section id="process" className="section"><h2>작업 이렇게 진행합니다</h2><p className="lead">상담부터 마무리까지, 체계적인 절차로 진행합니다.</p><div className="steps">{steps.map(s=><article key={s[0]}><em>{s[0]}</em><i className="processIcon"><img src={"/images/process/"+s[0]+".png"} alt="" width="88" height="88"/></i><strong>{s[1]}</strong><small>{s[2]}</small></article>)}</div></section>
-<section id="cases" className="section pale"><div className="sectionHead"><div><h2>작업사례로 확인하는 변화</h2><p className="lead">실제 작업 현장은 추후 현장 사진으로 교체됩니다.</p></div></div><div className="cases">{["해운대구 아파트 유품정리","부산진구 주택 정리 및 폐기물처리","사하구 빈집정리 및 부분 철거"].map((x,i)=><article key={i}><div className={"caseImg c"+i}><b>{i%2?"정리 작업":"BEFORE → AFTER"}</b></div><h3>{x}</h3></article>)}</div></section>
+<section id="cases" className="section pale caseGallery">
+<div className="sectionHead"><div><h2>작업사례로 확인하는 변화</h2><p className="lead">유품정리·빈집정리·폐기물처리 현장 사진을 유형별로 확인할 수 있도록 구성했습니다.</p></div></div>
+{[
+ ["유품정리","estate-cleanup","고인의 물품을 신중하게 분류하고 공간을 정리한 현장"],
+ ["빈집정리","vacant-home","장기간 비어 있던 공간의 생활물품과 가재도구를 정리한 현장"],
+ ["폐기물처리","waste","집정리 과정에서 발생한 물품을 분류하고 반출한 현장"]
+].map(([title,folder,desc])=><div className="caseGroup" key={folder}>
+ <div className="caseGroupHead"><div><span>WORK CASE</span><h3>{title}</h3><p>{desc}</p></div><Link href="/cases">전체 사례 보기 →</Link></div>
+ <div className="casePhotoGrid">{[1,2,3].map(n=><figure key={n} className="casePhotoSlot">
+   <div className="caseUploadPlaceholder"><small>PHOTO {String(n).padStart(2,"0")}</small><strong>{title}</strong><code>{"/images/cases/"+folder+"/0"+n+".webp"}</code></div>
+ </figure>)}</div>
+</div>)}
+</section>
 <section className="section trustNote"><p className="kicker">OUR STANDARD</p><h2>확인되지 않은 후기보다<br/>작업 기준을 먼저 보여드립니다</h2><p className="lead">실제 작업사례와 고객 후기는 자료가 확보된 뒤 사실에 맞게 공개합니다. 현재는 상담·현장 확인·작업 범위 협의 등 서비스 기준을 중심으로 안내합니다.</p></section>\n<section id="contact" className="cta"><div><small>혼자가 아닙니다.</small><h2>올바른정리가 함께합니다.</h2><p>힘든 순간, 부담스러운 정리도 올바른정리가 도와드리겠습니다.</p></div><a className="primary" href="#contact">☎ 전화 상담</a><a className="secondary" href="#">● 온라인 상담</a></section></main>
 <footer><strong>올바른정리</strong><p>부산 유품정리 전문업체 · 유품정리 · 폐기물처리 · 철거</p><small>※ 연락처와 사업자 정보는 실제 정보 확인 후 반영합니다.</small></footer><div className="mobileBar"><a href="#contact">☎ 전화상담</a><a href="#contact">● 온라인 상담</a></div></>}
