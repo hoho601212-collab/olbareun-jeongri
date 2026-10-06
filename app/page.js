@@ -10,7 +10,7 @@ export default function Home(){return <><main><section className="hero"><div cla
 <section id="cases" className="section pale caseGallery">
 <div className="sectionHead"><div><h2>작업사례로 확인하는 변화</h2><p className="lead">유품정리·빈집정리·폐기물처리 현장 사진을 유형별로 확인할 수 있도록 구성했습니다.</p></div></div>
 {[
- ["유품정리","estate-cleanup","고인의 물품을 신중하게 분류하고 공간을 정리한 현장",["깔끔한 방과 올바른정리 워터마크.png","정리 전 어수선한 홈오피스 침실.png","정리 중인 아늑한 수납 공간.png"]],
+ ["유품정리","estate-cleanup","고인의 물품을 신중하게 분류하고 공간을 정리한 현장",["흑백 빈방과 올바른정리 워터마크.png","흑백으로 담은 어수선한 방.png","정리 중인 흑백 거실 풍경.png"]],
  ["빈집정리","vacant-home","장기간 비어 있던 공간의 생활물품과 가재도구를 정리한 현장",null],
  ["폐기물처리","waste","집정리 과정에서 발생한 물품을 분류하고 반출한 현장",null]
 ].map(([title,folder,desc,photos])=><div className="caseGroup" key={folder}>
