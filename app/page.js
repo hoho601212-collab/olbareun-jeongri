@@ -10,13 +10,14 @@ export default function Home(){return <><main><section className="hero"><div cla
 <section id="cases" className="section pale caseGallery">
 <div className="sectionHead"><div><h2>작업사례로 확인하는 변화</h2><p className="lead">유품정리·빈집정리·폐기물처리 현장 사진을 유형별로 확인할 수 있도록 구성했습니다.</p></div></div>
 {[
- ["유품정리","estate-cleanup","고인의 물품을 신중하게 분류하고 공간을 정리한 현장"],
- ["빈집정리","vacant-home","장기간 비어 있던 공간의 생활물품과 가재도구를 정리한 현장"],
- ["폐기물처리","waste","집정리 과정에서 발생한 물품을 분류하고 반출한 현장"]
-].map(([title,folder,desc])=><div className="caseGroup" key={folder}>
+ ["유품정리","estate-cleanup","고인의 물품을 신중하게 분류하고 공간을 정리한 현장",["유품 정리 현장의 하루.png","유품정리 현장의 분주한 하루.png","추억을 정리하는 따뜻한 손길.png"]],
+ ["빈집정리","vacant-home","장기간 비어 있던 공간의 생활물품과 가재도구를 정리한 현장",null],
+ ["폐기물처리","waste","집정리 과정에서 발생한 물품을 분류하고 반출한 현장",null]
+].map(([title,folder,desc,photos])=><div className="caseGroup" key={folder}>
  <div className="caseGroupHead"><div><span>WORK CASE</span><h3>{title}</h3><p>{desc}</p></div><Link href="/cases">전체 사례 보기 →</Link></div>
  <div className="casePhotoGrid">{[1,2,3].map(n=><figure key={n} className="casePhotoSlot">
-   <div className="caseUploadPlaceholder"><small>PHOTO {String(n).padStart(2,"0")}</small><strong>{title}</strong><code>{"/images/cases/"+folder+"/0"+n+".webp"}</code></div>
+   {photos?<img className="casePhoto" src={"/images/cases/"+folder+"/"+photos[n-1]} alt={title+" 작업 현장 "+n} loading="lazy"/>:
+   <div className="caseUploadPlaceholder"><small>PHOTO {String(n).padStart(2,"0")}</small><strong>{title}</strong><code>{"/images/cases/"+folder+"/0"+n+".webp"}</code></div>}
  </figure>)}</div>
 </div>)}
 </section>
