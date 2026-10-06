@@ -39,13 +39,4 @@ export default function Home(){return <><main><section className="hero"><div cla
 <div className="faqFinal"><div><h3>찾으시는 답변이 없으신가요?</h3><p>현장 상황과 궁금한 내용을 알려주시면 작업 범위와 진행 방법을 편안하게 안내해드립니다.</p></div><a href="tel:01066484886">☎ 010-6648-4886</a><a href="http://qr.kakao.com/talk/xiB5oLU91AZmWwLV9g5AwwM4O5I-" target="_blank" rel="noopener noreferrer">카톡 문의 →</a></div>
 </section>
 <section id="contact" className="cta"><div><small>혼자가 아닙니다.</small><h2>올바른정리가 함께합니다.</h2><p>힘든 순간, 부담스러운 정리도 올바른정리가 도와드리겠습니다.</p></div><a className="primary" href="tel:01066484886">☎ 전화 상담</a><a className="secondary" href="http://qr.kakao.com/talk/xiB5oLU91AZmWwLV9g5AwwM4O5I-" target="_blank" rel="noopener noreferrer">● 카톡 문의</a></section></main>
-<footer className="siteFooter">
-<div className="footerInner">
-<div className="footerTop">
-<div className="footerBrand"><a className="footerLogo" href="/" aria-label="올바른정리 홈"><img src="/images/brand/logo.png" alt="올바른정리" /></a><p>마지막까지, 올바르게 정리합니다.</p><small>부산 지역 유품정리 · 빈집정리 · 폐기물처리 · 부분 철거 상담</small></div>
-<div className="footerNav"><div><strong>서비스 안내</strong><Link href="/service/estate-cleanup">유품정리</Link><Link href="/service/vacant-home">빈집정리</Link><Link href="/service/waste">폐기물처리</Link><Link href="/service/partial-demolition">부분 철거</Link><Link href="/busan">지역별 서비스</Link></div><div><strong>고객지원</strong><a href="#faq">자주 묻는 질문</a><Link href="/cases">작업사례</Link><a href="tel:01066484886">전화문의</a><a href="http://qr.kakao.com/talk/xiB5oLU91AZmWwLV9g5AwwM4O5I-" target="_blank" rel="noopener noreferrer">카카오톡 문의</a></div></div>
-</div>
-<div className="footerBusiness"><h3>올바른정리(올바른)</h3><div className="businessGrid"><p><span>상호</span>올바른</p><p><span>대표자</span>박자영</p><p><span>사업자등록번호</span>808-66-00808</p><p><span>업종</span>폐기물·철거</p><p className="wide"><span>주소</span>부산광역시 북구 시랑로 132번길 17-4 504</p><p className="wide"><span>이메일</span><a href="mailto:chlpjy@naver.com">chlpjy@naver.com</a></p></div></div>
-<div className="footerActions"><a href="tel:01066484886"><b>☎</b><span>전화문의<small>010-6648-4886</small></span></a><a href="http://qr.kakao.com/talk/xiB5oLU91AZmWwLV9g5AwwM4O5I-" target="_blank" rel="noopener noreferrer"><b>●</b><span>카카오톡<small>상담 바로가기</small></span></a><a href="https://map.naver.com/" target="_blank" rel="noopener noreferrer"><b>⌖</b><span>주소 안내<small>부산광역시 북구</small></span></a></div>
-<div className="footerCopy">© 2026 올바른정리(올바른). All rights reserved.</div>
-</div></footer><div className="mobileBar"><a href="tel:01066484886">☎ 전화상담</a><a href="http://qr.kakao.com/talk/xiB5oLU91AZmWwLV9g5AwwM4O5I-" target="_blank" rel="noopener noreferrer">● 카톡문의</a></div></>}
+<div className="mobileBar"><a href="tel:01066484886">☎ 전화상담</a><a href="http://qr.kakao.com/talk/xiB5oLU91AZmWwLV9g5AwwM4O5I-" target="_blank" rel="noopener noreferrer">● 카톡문의</a></div></>}
