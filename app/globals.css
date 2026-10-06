@@ -135,3 +135,13 @@
 .mobileNavContact{margin-top:auto;display:grid;gap:8px}.mobileNavContact a{padding:14px 15px;border-radius:12px;background:#102d43;color:#fff;font-size:12px}.mobileNavContact a:last-child{background:#f2ce00;color:#161616}.mobileNavContact strong{display:block;font-size:16px;margin-top:3px}
 .menuBackdrop{display:block;position:fixed;z-index:1001;inset:0;border:0;background:rgba(8,20,29,.48);backdrop-filter:blur(2px)}
 }
+
+/* Header navigation specificity fix */
+.siteTop>.desktopNav{display:flex;gap:25px;margin-left:auto}
+.siteTop>.mobileNav{display:none}
+@media(max-width:800px){
+.siteTop>.desktopNav{display:none!important}
+.siteTop>.mobileNav{display:flex!important;position:fixed;z-index:1002;top:0;right:0;width:min(84vw,360px);height:100dvh;margin:0;overflow-y:auto;background:#fff;padding:86px 24px 30px;flex-direction:column;gap:0;transform:translateX(105%);transition:transform .28s ease;box-shadow:-15px 0 40px rgba(8,28,42,.15)}
+.siteTop>.mobileNav.isOpen{transform:translateX(0)}
+.siteTop>.mobileNav>a{white-space:normal;font-size:17px;font-weight:800;color:#102d43;padding:16px 4px;border-bottom:1px solid #e7ecef}
+}
