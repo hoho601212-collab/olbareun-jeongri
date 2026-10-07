@@ -197,3 +197,7 @@
  .footerNav{grid-template-columns:1fr}
  .businessGrid p{grid-template-columns:78px minmax(0,1fr)}
 }
+
+/* Waste service hero */
+.wasteHero{background-image:linear-gradient(90deg,rgba(7,16,23,.91) 0%,rgba(7,16,23,.73) 38%,rgba(7,16,23,.31) 67%,rgba(7,16,23,.13) 100%),url('/images/services/waste/waste-commercial-hero.webp');background-size:cover;background-position:center center;background-repeat:no-repeat}
+@media(max-width:800px){.wasteHero{min-height:430px;background-position:48% center;background-image:linear-gradient(90deg,rgba(7,16,23,.90) 0%,rgba(7,16,23,.68) 57%,rgba(7,16,23,.31) 100%),url('/images/services/waste/waste-commercial-hero.webp')}}
