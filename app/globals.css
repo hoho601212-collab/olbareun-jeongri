@@ -176,3 +176,8 @@
 /* Vacant-home service hero */
 .vacantHomeHero{background-image:linear-gradient(90deg,rgba(7,16,23,.90) 0%,rgba(7,16,23,.72) 38%,rgba(7,16,23,.30) 67%,rgba(7,16,23,.14) 100%),url('/images/services/vacant-home/vacant-home-apartment-hero.webp');background-size:cover;background-position:center center;background-repeat:no-repeat}
 @media(max-width:800px){.vacantHomeHero{min-height:430px;background-position:42% center;background-image:linear-gradient(90deg,rgba(7,16,23,.88) 0%,rgba(7,16,23,.67) 55%,rgba(7,16,23,.30) 100%),url('/images/services/vacant-home/vacant-home-apartment-hero.webp')}}
+
+/* Center consultation CTA actions on all pages */
+.localCta .actions{justify-content:center;align-items:center;margin-left:auto;margin-right:auto}
+.localCta .actions a{text-align:center}
+@media(max-width:800px){.localCta .actions{display:flex;justify-content:center;flex-wrap:wrap;width:100%}}
