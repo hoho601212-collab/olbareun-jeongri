@@ -181,3 +181,19 @@
 .localCta .actions{justify-content:center;align-items:center;margin-left:auto;margin-right:auto}
 .localCta .actions a{text-align:center}
 @media(max-width:800px){.localCta .actions{display:flex;justify-content:center;flex-wrap:wrap;width:100%}}
+
+/* Footer mobile fit after removing contact cards */
+@media(max-width:760px){
+ .siteFooter,.footerInner,.footerTop,.footerNav,.footerBusiness,.businessGrid{max-width:100%;min-width:0}
+ .footerInner{width:100%;overflow:hidden;padding-left:18px;padding-right:18px}
+ .footerTop{width:100%}
+ .footerNav{grid-template-columns:repeat(2,minmax(0,1fr));width:100%}
+ .footerNav>div{min-width:0}
+ .footerNav a,.businessGrid p,.businessGrid a{overflow-wrap:anywhere;word-break:keep-all}
+ .footerBrand .footerLogo{width:min(270px,100%)}
+ .footerCopy{width:100%;margin-top:6px}
+}
+@media(max-width:380px){
+ .footerNav{grid-template-columns:1fr}
+ .businessGrid p{grid-template-columns:78px minmax(0,1fr)}
+}
