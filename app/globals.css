@@ -320,3 +320,30 @@ img,svg,video{max-width:100%}
  #cases .casePhotoGrid{grid-template-columns:1fr!important}
  .mobileBar a{font-size:13px}
 }
+
+/* Shared responsive service pages: estate, vacant, waste, demolition */
+@media(max-width:800px){
+ .serviceHero{min-height:420px;padding:56px 0!important;background-size:cover!important}
+ .serviceHero>div{min-width:0;max-width:100%!important}
+ .serviceHero h1{font-size:clamp(29px,8vw,42px)!important;line-height:1.24!important;overflow-wrap:break-word}
+ .serviceHero span{display:block;font-size:14px!important;line-height:1.75!important;overflow-wrap:anywhere}
+ .serviceIntro,.estateExpert,.estateScope,.serviceFaq,.caseHead,.keywordHead{grid-template-columns:minmax(0,1fr)!important}
+ .serviceIntro>*,.estateExpert>*,.estateScope>*,.serviceFaq>*,.caseHead>*,.keywordHead>*{min-width:0!important}
+ .servicePoints,.detailGrid{grid-template-columns:minmax(0,1fr)!important}
+ .detailGrid article,.servicePoints article{min-width:0}
+ .keywordSection{overflow:hidden}
+ .keywordCards{width:100%;max-width:100%;scroll-padding-left:2px}
+ .keywordCards article{min-width:0;flex-basis:min(78vw,310px)}
+ .keywordImage{width:100%;aspect-ratio:16/9}
+ .keywordImage img{width:100%;height:100%;object-fit:cover}
+ .serviceFaq details,.serviceFaq summary{min-width:0}
+ .serviceFaq summary{grid-template-columns:30px minmax(0,1fr) 20px!important;gap:8px!important}
+ .serviceFaq details p{overflow-wrap:anywhere}
+ .localCta h2{font-size:clamp(24px,6.5vw,34px)!important;line-height:1.35}
+ .localCta .actions{max-width:460px!important;margin-inline:auto!important}
+}
+@media(max-width:390px){
+ .serviceHero{min-height:390px}
+ .keywordCards article{flex-basis:84vw}
+ .serviceFaq summary{font-size:12px!important}
+}
