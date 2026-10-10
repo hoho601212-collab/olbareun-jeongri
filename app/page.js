@@ -31,7 +31,8 @@ export default function Home(){return <><main><section className="hero"><div cla
  </figure>)}</div>
 </div>)}
 </section>
-<section className="section trustNote"><p className="kicker">OUR STANDARD</p><h2>확인되지 않은 후기보다<br/>작업 기준을 먼저 보여드립니다</h2><p className="lead">실제 작업사례와 고객 후기는 자료가 확보된 뒤 사실에 맞게 공개합니다. 현재는 상담·현장 확인·작업 범위 협의 등 서비스 기준을 중심으로 안내합니다.</p></section>\n<section id="faq" className="section faqSection">
+<section className="section trustNote"><p className="kicker">OUR STANDARD</p><h2>확인되지 않은 후기보다<br/>작업 기준을 먼저 보여드립니다</h2><p className="lead">실제 작업사례와 고객 후기는 자료가 확보된 뒤 사실에 맞게 공개합니다. 현재는 상담·현장 확인·작업 범위 협의 등 서비스 기준을 중심으로 안내합니다.</p></section>
+<section id="faq" className="section faqSection">
 <div className="faqIntro"><p className="kicker">FAQ</p><h2>자주 묻는 질문</h2><p className="lead">올바른정리에 많이 문의하시는 부산 유품정리 상담 내용을 정리했습니다.</p></div>
 <div className="faqLayout"><div className="faqList">{faqs.map((f,i)=><details className="faqItem" key={f[0]}><summary><span>{String(i+1).padStart(2,"0")}</span><strong>{f[0]}</strong><b>＋</b></summary><p>{f[1]}</p></details>)}</div>
 <aside className="quickGuide"><p className="kicker">QUICK GUIDE</p><h3>아래 내용을 알려주시면<br/>상담이 더욱 빠르게 진행됩니다.</h3><div className="guideGrid">{[["01","현장 주소와 주거 형태","부산 내 위치와 아파트·빌라·주택·원룸 등 현장 유형"],["02","층수와 엘리베이터","계단 작업 여부와 엘리베이터 사용 가능 여부"],["03","정리할 공간의 사진","방·거실·주방·베란다와 대형 가구가 보이는 사진"],["04","희망 작업 일정","원하는 날짜와 오전·오후 시간대"]].map(x=><div key={x[0]}><em>{x[0]}</em><strong>{x[1]}</strong><small>{x[2]}</small></div>)}</div><div className="faqContact"><a href="tel:01066484886"><small>전화문의</small><strong>010-6648-4886</strong></a><a href="http://qr.kakao.com/talk/xiB5oLU91AZmWwLV9g5AwwM4O5I-" target="_blank" rel="noopener noreferrer"><small>카톡문의</small><strong>바로가기 →</strong></a></div></aside></div>
