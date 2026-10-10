@@ -266,3 +266,19 @@ img,svg,video{max-width:100%}
  #services .serviceCard{padding-left:4px!important;padding-right:4px!important}
  #services .serviceCard h3{font-size:13px!important}
 }
+
+/* Mobile homepage follow-up: readable area navigation and service links */
+@media(max-width:800px){
+ #areas.split{text-align:left!important;gap:22px!important}
+ #areas.split>div:first-child{text-align:center}
+ #areas .areaPanel{display:grid!important;grid-template-columns:1fr!important;gap:16px!important;min-width:0}
+ #areas .mapImageWrap{width:100%;min-width:0;overflow:hidden}
+ #areas .busanMapImage{width:100%;max-width:440px;height:auto;margin:0 auto}
+ #areas .areaList{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}
+ #areas .areaList a{min-width:0;min-height:43px;display:flex!important;align-items:center;justify-content:space-between!important;text-align:left;padding:10px 12px!important;font-size:13px!important;line-height:1.35;overflow-wrap:anywhere}
+ #areas .areaList b{display:block!important}
+ #services .serviceCard:focus-visible,#areas .areaList a:focus-visible{outline:3px solid #2d79af;outline-offset:2px}
+}
+@media(max-width:390px){
+ #areas .areaList a{font-size:12px!important;padding:9px 10px!important}
+}
