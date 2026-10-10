@@ -282,3 +282,41 @@ img,svg,video{max-width:100%}
 @media(max-width:390px){
  #areas .areaList a{font-size:12px!important;padding:9px 10px!important}
 }
+
+/* Mobile FAQ, gallery, consultation and footer refinement */
+@media(max-width:800px){
+ #faq.faqSection{padding-top:48px!important;padding-bottom:50px!important;overflow:hidden}
+ #faq .faqLayout{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:24px!important}
+ #faq .faqList,#faq .quickGuide,#faq .faqLinks,#faq .faqFinal{min-width:0!important;max-width:100%!important}
+ #faq .faqItem summary{display:grid!important;grid-template-columns:28px minmax(0,1fr) 24px!important;gap:9px!important;align-items:center!important;overflow-wrap:anywhere}
+ #faq .faqItem summary strong{min-width:0;line-height:1.55}
+ #faq .faqItem summary b{justify-self:end}
+ #faq .faqItem>p{overflow-wrap:anywhere;line-height:1.75}
+ #faq .quickGuide{padding:20px 16px!important}
+ #faq .guideGrid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important}
+ #faq .guideGrid>div{min-width:0}
+ #faq .faqContact{display:grid!important;grid-template-columns:1fr!important;gap:9px!important}
+ #faq .faqContact a{min-width:0;overflow-wrap:anywhere}
+ #faq .faqLinks{display:grid!important;grid-template-columns:1fr!important;gap:9px!important}
+ #faq .faqLinks>div{grid-column:auto!important}
+ #faq .faqFinal{display:grid!important;grid-template-columns:1fr!important;gap:10px!important;padding:20px 16px!important}
+ #faq .faqFinal>div{grid-column:auto!important}
+ #faq .faqFinal>a{display:block;width:100%;text-align:center}
+ #cases.caseGallery{padding-top:48px!important;padding-bottom:52px!important}
+ #cases .caseGroupHead{display:flex;flex-wrap:wrap;align-items:flex-start;gap:8px}
+ #cases .caseGroupHead>a{white-space:normal}
+ #cases .casePhotoGrid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important}
+ #cases .casePhotoSlot{width:100%;min-width:0;aspect-ratio:3/2;margin:0}
+ #cases .casePhotoSlot img{display:block;width:100%;height:100%;object-fit:cover}
+ #contact.cta{padding:38px 18px 100px!important;gap:13px!important}
+ #contact.cta h2{font-size:25px;line-height:1.35}
+ #contact.cta p{font-size:13px;line-height:1.7}
+ .mobileBar{bottom:max(10px,env(safe-area-inset-bottom));left:12px;right:12px;grid-template-columns:repeat(2,minmax(0,1fr));overflow:hidden}
+ .mobileBar a{min-width:0;padding:15px 8px;font-size:14px;white-space:nowrap}
+ .siteFooter .footerInner{padding-bottom:calc(92px + env(safe-area-inset-bottom))!important}
+}
+@media(max-width:380px){
+ #faq .guideGrid{grid-template-columns:1fr!important}
+ #cases .casePhotoGrid{grid-template-columns:1fr!important}
+ .mobileBar a{font-size:13px}
+}
