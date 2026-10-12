@@ -1,1 +1,1 @@
-export default function robots(){return {rules:{userAgent:"*",allow:"/"},sitemap:"https://olbarun.kr/sitemap.xml"}}
+export default function robots(){return {rules:{userAgent:"*",allow:"/"},sitemap:"https://www.olbarun.kr/sitemap.xml"}}
