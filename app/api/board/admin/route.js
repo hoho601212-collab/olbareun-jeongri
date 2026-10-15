@@ -1,0 +1,8 @@
+import {NextResponse} from "next/server";import {db,adminValid} from "../../../../lib/board";
+export const runtime="nodejs";
+const fail=(error,status=400)=>NextResponse.json({error},{status,headers:{"Cache-Control":"no-store"}});
+export async function POST(req){try{const b=await req.json();if(!adminValid(b.password))return fail("관리자 인증에 실패했습니다.",403);if(b.action==="list"){const [notices,inquiries]=await Promise.all([db("board_notices",{query:"?select=id,title,is_pinned,created_at&order=created_at.desc&limit=100"}),db("board_inquiries",{query:"?select=id,name,phone,title,content,answer,status,created_at&order=created_at.desc&limit=100"})]);return NextResponse.json({notices,inquiries},{headers:{"Cache-Control":"no-store"}})}
+if(b.action==="notice"){if(typeof b.title!=="string"||!b.title.trim()||b.title.length>200||typeof b.content!=="string"||!b.content.trim()||b.content.length>20000)return fail("공지 제목과 내용을 확인하세요.");await db("board_notices",{method:"POST",body:{title:b.title.trim(),content:b.content.trim(),is_pinned:b.is_pinned==="yes"}});return NextResponse.json({ok:true})}
+if(b.action==="answer"){if(!Number.isSafeInteger(Number(b.id))||typeof b.answer!=="string"||!b.answer.trim()||b.answer.length>20000)return fail("답변 내용을 확인하세요.");await db("board_inquiries",{method:"PATCH",query:"?id=eq."+Number(b.id),body:{answer:b.answer.trim(),status:"answered",updated_at:new Date().toISOString()}});return NextResponse.json({ok:true})}
+if(b.action==="delete"){if(!Number.isSafeInteger(Number(b.id)))return fail("번호를 확인하세요.");await db("board_notices",{method:"DELETE",query:"?id=eq."+Number(b.id)});return NextResponse.json({ok:true})}
+return fail("지원하지 않는 요청입니다.")}catch{return fail("게시판 데이터베이스가 연결되지 않았거나 요청을 처리할 수 없습니다.",503)}}
