@@ -1,0 +1,1 @@
+"use client";import {useEffect} from "react";export default function ViewTracker({id}){useEffect(()=>{fetch("/api/board/notices/"+id,{method:"POST",cache:"no-store"}).catch(()=>{})},[id]);return null}
