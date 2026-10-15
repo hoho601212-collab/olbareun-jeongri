@@ -5,6 +5,9 @@ create table if not exists public.board_notices (
  title text not null check(char_length(title) between 1 and 200),
  content text not null,
  is_pinned boolean not null default false,
+ display_date date not null default current_date,
+ view_count integer not null default 0 check(view_count>=0),
+ is_published boolean not null default true,
  created_at timestamptz not null default now(),
  updated_at timestamptz not null default now()
 );
