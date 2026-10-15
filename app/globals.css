@@ -378,3 +378,32 @@ img,svg,video{max-width:100%}
 
 /* Hide duplicate FAQ closing CTA on homepage; footer contacts remain available. */
 .faqSection .faqFinal{display:none!important}
+
+/* Notice and private inquiry boards */
+.boardPage{min-height:65vh;background:#fafbfc;color:#1c2934;padding-bottom:80px}
+.boardHead{text-align:center;background:#f0f2f3;padding:65px 20px 58px}
+.boardHead p{letter-spacing:.17em;font-size:12px;font-weight:800;color:#687780;margin:0 0 12px}
+.boardHead h1{font-size:clamp(30px,4vw,44px);margin:0 0 12px;color:#18232b}
+.boardHead span{font-size:15px;line-height:1.7;color:#5e6970}
+.boardWrap{width:min(980px,calc(100% - 40px));margin:40px auto 0;background:#fff;padding:34px;border:1px solid #e3e6e8;border-radius:14px}
+.boardBar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:22px}
+.boardBar a{color:#283f51;font-weight:700}.boardEmpty{text-align:center;padding:75px 10px;color:#71808a}
+.boardList>a{display:flex;align-items:center;gap:18px;padding:20px 10px;border-bottom:1px solid #e8ecef}
+.boardList>a span{font-size:12px;color:#677780}.boardList>a strong{flex:1}.boardList>a time{color:#7c8790;font-size:13px}
+.boardArticle h2{font-size:26px}.boardArticle time{color:#78838a;font-size:13px}
+.boardContent{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.85;padding:22px 0;color:#394954}
+.boardArticle .boardContent{border-top:1px solid #e5e9ec;margin-top:20px;min-height:170px}
+.boardTabs{display:flex;border-bottom:1px solid #e0e5e8;margin-bottom:26px;gap:12px}
+.boardTabs button{background:transparent;border:0;padding:13px 20px;font:inherit;font-weight:700;color:#6e7880;cursor:pointer}
+.boardTabs button.active{border-bottom:3px solid #172b3b;color:#172b3b}
+.boardForm{display:grid;gap:18px}.boardForm label{display:grid;gap:8px;font-size:14px;font-weight:700}
+.boardForm input:not([type=checkbox]),.boardForm textarea{font:inherit;font-weight:400;border:1px solid #cdd5db;border-radius:8px;padding:13px;width:100%;min-width:0;background:white;color:#1d2a33}
+.boardForm textarea{resize:vertical}.boardForm input:focus,.boardForm textarea:focus{outline:2px solid #8396a4;outline-offset:1px}
+.boardForm .boardConsent{display:flex;align-items:flex-start;gap:9px;line-height:1.6;font-weight:400}.boardConsent input{margin-top:5px}
+.boardButton{display:inline-flex;align-items:center;justify-content:center;background:#172b3b;color:white;border:0;border-radius:8px;padding:13px 22px;font-weight:800;cursor:pointer;text-decoration:none;width:fit-content}
+.boardButton:disabled{opacity:.5;cursor:wait}.boardError{color:#b12828;padding:12px;background:#fff3f3;border-radius:8px}
+.boardResult{margin-top:25px;border:1px solid #d4dfe2;background:#f7fafb;padding:25px;border-radius:10px}
+.receiptNumber{font-size:24px;letter-spacing:.08em;overflow-wrap:anywhere}
+.boardAdminItem{padding:20px 0;border-bottom:1px solid #e5e9ed}.boardAdminItem>p{color:#6a7781}.boardAdminItem>button{margin-left:12px}
+.boardWrap>h2{margin:38px 0 15px}
+@media(max-width:800px){.boardHead{padding:48px 18px}.boardWrap{width:calc(100% - 24px);margin-top:16px;padding:20px 16px}.boardList>a{gap:8px;flex-wrap:wrap}.boardList>a strong{flex-basis:70%}.boardList>a time{margin-left:auto}.boardTabs button{padding:12px 10px;font-size:13px}}
