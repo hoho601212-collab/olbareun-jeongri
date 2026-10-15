@@ -355,3 +355,12 @@ img,svg,video{max-width:100%}
 .areaHeroWithImage .actions{position:absolute;bottom:22px;right:24px;margin:0;display:flex;gap:10px}
 .areaHeroWithImage .actions a{font-size:13px;padding:12px 16px;box-shadow:0 2px 12px #0003}
 @media(max-width:800px){.areaHeroWithImage{aspect-ratio:3/2;background-position:center}.areaHeroWithImage .actions{bottom:8px;right:8px;gap:5px;display:flex}.areaHeroWithImage .actions a{font-size:10px;padding:7px 9px;border-radius:6px}}
+
+/* Busan district FAQ: keep section full-width; avoid inherited narrow max-width after large section padding. */
+.section.faq{width:100%;max-width:none;margin:0;padding:72px max(24px,calc((100% - 1000px)/2));box-sizing:border-box}
+.section.faq>h2,.section.faq>.kicker,.section.faq>details{width:100%;max-width:100%;min-width:0}
+.section.faq>h2{font-size:clamp(26px,3vw,36px);line-height:1.35;overflow-wrap:break-word}
+.section.faq>details{padding:22px 0;border-bottom:1px solid #e0e7ee}
+.section.faq>details>summary{font-size:17px;line-height:1.65;overflow-wrap:break-word}
+.section.faq>details>p{font-size:15px;line-height:1.9;max-width:900px;overflow-wrap:break-word}
+@media(max-width:800px){.section.faq{padding:48px 20px}.section.faq>details>summary{font-size:16px}.section.faq>details>p{font-size:14px}}
