@@ -1,3 +1,4 @@
+import BoardHome from "./BoardHome";
 import Link from "next/link";
 import {areas as areaLinks} from "../lib/areas";
 const services=[["01.png","유품정리","고인의 물품을 신중하게 분류하고 정리합니다.","/service/estate-cleanup"],["02.png","폐기물처리","집정리 과정에서 발생하는 물품의 반출 범위를 확인합니다.","/service/waste"],["03.png","부분 철거","정리 후 필요한 시설물 철거 범위를 확인합니다.","/service/partial-demolition"],["04.png","빈집정리","장기간 비어 있거나 매각 전인 공간을 목적에 맞게 정리합니다.","/service/vacant-home"]];
@@ -40,5 +41,5 @@ export default function Home(){return <><main><section className="hero"><div cla
 <div className="faqLinks"><div><p className="kicker">SERVICE LINK</p><h3>궁금한 주제별 페이지를<br/>함께 확인해보세요.</h3></div><Link href="/">올바른정리 홈<small>서비스와 작업사례 한눈에 보기</small></Link><Link href="/service/estate-cleanup">유품정리 서비스<small>작업 범위와 진행 과정 안내</small></Link><Link href="/service/waste">폐기물처리<small>집정리 후 반출 범위 확인</small></Link><Link href="/busan">부산 지역 서비스<small>부산 16개 구·군 안내</small></Link></div>
 <div className="faqFinal"><div><h3>찾으시는 답변이 없으신가요?</h3><p>현장 상황과 궁금한 내용을 알려주시면 작업 범위와 진행 방법을 편안하게 안내해드립니다.</p></div><a href="tel:01066484886">☎ 010-6648-4886</a><a href="http://qr.kakao.com/talk/xiB5oLU91AZmWwLV9g5AwwM4O5I-" target="_blank" rel="noopener noreferrer">카톡 문의 →</a></div>
 </section>
-<section id="contact" className="cta"><div><small>혼자가 아닙니다.</small><h2>올바른정리가 함께합니다.</h2><p>힘든 순간, 부담스러운 정리도 올바른정리가 도와드리겠습니다.</p></div><a className="primary" href="tel:01066484886">☎ 전화 상담</a><a className="secondary" href="http://qr.kakao.com/talk/xiB5oLU91AZmWwLV9g5AwwM4O5I-" target="_blank" rel="noopener noreferrer">● 카톡 문의</a></section></main>
+<BoardHome/><section id="contact" className="cta"><div><small>혼자가 아닙니다.</small><h2>올바른정리가 함께합니다.</h2><p>힘든 순간, 부담스러운 정리도 올바른정리가 도와드리겠습니다.</p></div><a className="primary" href="tel:01066484886">☎ 전화 상담</a><a className="secondary" href="http://qr.kakao.com/talk/xiB5oLU91AZmWwLV9g5AwwM4O5I-" target="_blank" rel="noopener noreferrer">● 카톡 문의</a></section></main>
 <div className="mobileBar"><a href="tel:01066484886">☎ 전화상담</a><a href="http://qr.kakao.com/talk/xiB5oLU91AZmWwLV9g5AwwM4O5I-" target="_blank" rel="noopener noreferrer">● 카톡문의</a></div></>}
