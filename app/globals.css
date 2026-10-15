@@ -432,3 +432,16 @@ img,svg,video{max-width:100%}
 @media(max-width:800px){.boardHomeSection{padding:48px 16px}.boardHomeGrid{grid-template-columns:1fr;gap:18px}.boardHomeCard header{padding:20px}.boardHomeRows>a{padding:16px}.boardHomePrivacy{min-height:260px}}
 
 .boardBar .boardAdminAccessButton{display:inline-flex;align-items:center;justify-content:center;padding:11px 18px;border-radius:9px;background:#203b58;color:#fff;font-size:13px;font-weight:800;text-decoration:none;box-shadow:0 3px 10px rgba(20,41,67,.1);transition:background .2s,transform .2s}.boardBar .boardAdminAccessButton:hover{background:#315a82;transform:translateY(-1px)}
+
+/* Admin notice full editing */
+.boardAdminHint{font-size:13px;color:#697887;margin:0 0 16px}
+.boardAdminItemHead{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.boardAdminItemHead>strong{font-size:16px;color:#203447;overflow-wrap:anywhere}
+.boardAdminItemHead>div{display:flex;gap:8px;align-items:center}
+.boardEditToggle,.boardDeleteButton{border:1px solid #c9d5e3;background:#fff;color:#26496b;border-radius:8px;padding:9px 14px;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
+.boardEditToggle:hover{background:#edf3fa}
+.boardDeleteButton{color:#a13d3d;border-color:#e9c8c8}
+.boardAdminEditForm{margin-top:18px;padding:22px;background:#f6f9fc;border:1px solid #e0e9f2;border-radius:12px}
+.boardAdminEditColumns{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.boardSaved{padding:14px;border-radius:8px;background:#edf8f0;color:#256c3d;font-weight:700}
+@media(max-width:650px){.boardAdminEditColumns{grid-template-columns:1fr}.boardAdminEditForm{padding:16px}}
