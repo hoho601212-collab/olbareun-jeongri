@@ -407,3 +407,26 @@ img,svg,video{max-width:100%}
 .boardAdminItem{padding:20px 0;border-bottom:1px solid #e5e9ed}.boardAdminItem>p{color:#6a7781}.boardAdminItem>button{margin-left:12px}
 .boardWrap>h2{margin:38px 0 15px}
 @media(max-width:800px){.boardHead{padding:48px 18px}.boardWrap{width:calc(100% - 24px);margin-top:16px;padding:20px 16px}.boardList>a{gap:8px;flex-wrap:wrap}.boardList>a strong{flex-basis:70%}.boardList>a time{margin-left:auto}.boardTabs button{padding:12px 10px;font-size:13px}}
+
+/* Homepage 50/50 news + private consultation cards */
+.boardHomeSection{max-width:1180px;margin:0 auto;padding:76px 24px 90px}
+.boardHomeHeading{margin-bottom:30px}.boardHomeHeading p{font-size:12px;font-weight:800;letter-spacing:.12em;color:#53749b}.boardHomeHeading h2{font-size:clamp(28px,3.2vw,38px);margin:10px 0}.boardHomeHeading span{color:#718091;font-size:15px}
+.boardHomeGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.boardHomeCard{border:1px solid #d7e1ef;border-radius:22px;overflow:hidden;background:#f0f5fd;min-width:0}
+.boardHomeCard:nth-child(2){background:#fff}
+.boardHomeCard header{display:flex;justify-content:space-between;align-items:center;padding:26px 25px;border-bottom:1px solid #dce5f1}
+.boardHomeCard header h3{font-size:21px;margin:0;color:#172d49}.boardHomeCard header a{font-size:13px;font-weight:700;color:#335b93}
+.boardHomeRows>a{display:flex;align-items:center;gap:15px;min-height:89px;padding:18px 24px;border-bottom:1px solid #dce5f1}
+.boardHomeRows>a>div{flex:1;min-width:0}.boardHomeRows strong{display:block;color:#1d344d;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.boardHomeRows small{display:block;margin-top:7px;color:#7487a4;font-size:12px}.boardHomeRows>a>span:last-child{color:#5276ae}
+.boardHomeBadge{font-size:12px;font-weight:800;color:#3867b1;background:#dfe9ff;border-radius:7px;padding:9px;flex-shrink:0}
+.boardHomeRows>p{padding:28px;color:#718091}
+.boardHomePrivacy{padding:34px 30px 28px;text-align:center;min-height:345px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.boardLock{font-size:36px;color:#5275b5}.boardHomePrivacy h4{font-size:19px;margin:18px 0 10px}.boardHomePrivacy p{color:#657789;line-height:1.8;max-width:350px}
+.boardHomePrivacySteps{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:25px}.boardHomePrivacySteps span{background:#edf4fb;border-radius:18px;padding:9px 13px;font-size:12px;color:#365d8b}
+.boardHomeActions{padding:22px 24px;display:grid;gap:12px;border-top:1px solid #e0e8f2}
+.boardHomeActions a{text-align:center;display:block;border-radius:12px;padding:18px;font-weight:800}
+.boardHomePrimary{background:#2854e8;color:white!important}.boardHomeSecondary{border:1px solid #c7d6ef;color:#2a4c82!important}
+.boardNoticeEdit{display:flex;align-items:end;flex-wrap:wrap;gap:12px;margin:12px 0}.boardNoticeEdit label{display:grid;gap:4px;font-size:12px}.boardNoticeEdit input{padding:8px;border:1px solid #ccd4dd;border-radius:6px}
+.boardHoneypot{position:absolute!important;left:-99999px!important;width:1px!important;height:1px!important;overflow:hidden!important}
+@media(max-width:800px){.boardHomeSection{padding:48px 16px}.boardHomeGrid{grid-template-columns:1fr;gap:18px}.boardHomeCard header{padding:20px}.boardHomeRows>a{padding:16px}.boardHomePrivacy{min-height:260px}}
